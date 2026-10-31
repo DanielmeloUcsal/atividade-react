@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101827" />
+    <meta name="description" content="PulseDesk — painel interativo de acompanhamento de projetos em React" />
+    <title>PulseDesk | Painel de projetos</title>
+    <script>
+      window.addEventListener('error', (event) => {
+        const root = document.getElementById('root');
+        if (root && !root.hasChildNodes()) {
+          root.innerHTML = '<main style="padding:32px;font-family:system-ui"><h1>Erro ao iniciar a aplicação</h1><p>Abra o console do navegador (F12) e confira a mensagem de erro.</p></main>';
+        }
+        console.error('Falha ao iniciar PulseDesk:', event.message);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
